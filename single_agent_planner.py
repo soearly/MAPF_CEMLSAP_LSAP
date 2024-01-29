@@ -33,7 +33,6 @@ def compute_heuristics(my_map, goal):
                 existing_node = closed_list[child_loc]
                 if existing_node['cost'] > child_cost:
                     closed_list[child_loc] = child
-                    # open_list.delete((existing_node['cost'], existing_node['loc'], existing_node))
                     heapq.heappush(open_list, (child_cost, child_loc, child))
             else:
                 closed_list[child_loc] = child
@@ -48,15 +47,14 @@ def compute_heuristics(my_map, goal):
 
 def build_constraint_table(constraints, agent):
     ##############################
-    # Task 1.2/1.3: Return a table that constains the list of constraints of
-    #               the given agent for each time step. The table can be used
-    #               for a more efficient constraint violation check in the 
-    #               is_constrained function.
+    # Return a table that constains the list of constraints of
+    # the given agent for each time step. The table can be used
+    # for a more efficient constraint violation check in the 
+    # is_constrained function.
 
     constraints_table = dict()
     for constraint in constraints:
-        # we need to consider only the constraints for the given agent
-        # 4.1 Supporting positive constraints
+        # Supporting positive constraints
         if (not 'positive' in constraint.keys()):
             constraint['positive'] = False
         if constraint['agent'] == agent:
@@ -97,7 +95,7 @@ def flat_constraints_list(list_of_constraints_arr):
 
 def is_constrained(curr_loc, next_loc, next_time, constraint_table):
     ##############################
-    # Task 1.2/1.3: Check if a move from curr_loc to next_loc at time step next_time violates
+    # 1.2/1.3: Check if a move from curr_loc to next_loc at time step next_time violates
     #               any given constraint. For efficiency the constraints are indexed in a constraint_table
     #               by time step, see build_constraint_table.
     if next_time in constraint_table:
@@ -147,7 +145,7 @@ def a_star(my_map, start_loc, goal_loc, h_values, agent, constraints):
     """
 
     ##############################
-    # Task 1.1: Extend the A* search to search in the space-time domain
+    # 1.1: Extend the A* search to search in the space-time domain
     #           rather than space domain, only.
 
     open_list = []
@@ -162,10 +160,10 @@ def a_star(my_map, start_loc, goal_loc, h_values, agent, constraints):
 
     while len(open_list) > 0:
         curr = pop_node(open_list)
-        # Task 1.1 -> 1.3: Default goal
+        # 1.1 -> 1.3: Default goal
         # if curr['loc'] == goal_loc:
         #############################
-        # Task 1.4: Adjust the goal test condition to handle goal constraints
+        # 1.4: Adjust the goal test condition to handle goal constraints
         if curr['loc'] == goal_loc and not is_future_constrained(goal_loc, curr['time'], constraints_table):
             return get_path(curr)
         for dir in range(5):

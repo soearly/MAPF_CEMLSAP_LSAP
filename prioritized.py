@@ -34,7 +34,7 @@ class PrioritizedPlanningSolver(object):
         result = []
         constraints = []
 
-        # # Task 1.2 testing
+        # # 1.2 testing
         # constraints.append({
         #                     'agent': 0,
         #                     'loc': [(1,5)],
@@ -43,7 +43,7 @@ class PrioritizedPlanningSolver(object):
         #                     # 'positive': False,
         #                 })
 
-        # # Task 1.3 testing
+        # # 1.3 testing
         # constraints.append({
         #                     'agent': 1,
         #                     'loc': [(1,2) , (1,3)],
@@ -52,7 +52,7 @@ class PrioritizedPlanningSolver(object):
         #                     'positive': False,
         #                 })
 
-        # # Task 1.4 testing
+        # # 1.4 testing
         # constraints.append({
         #                     'agent': 0,
         #                     'loc': [(1,5)],
@@ -70,7 +70,7 @@ class PrioritizedPlanningSolver(object):
             result.append(path)
 
             ##############################
-            # Task 2: Add constraints here
+            # 2: Add constraints here
             #         Useful variables:
             #            * path contains the solution path of the current (i'th) agent, e.g., [(1,1),(1,2),(1,3)]
             #            * self.num_of_agents has the number of total agents

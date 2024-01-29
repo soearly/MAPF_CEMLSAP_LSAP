@@ -1,6 +1,5 @@
 #
 # Please insert this function into "cbs.py" before "class CBSSolver"
-# is defined.
 #
 
 def paths_violate_constraint(constraint, paths):

@@ -24,12 +24,11 @@ def find_shorter_paths(path_1, path_2):
 
 def detect_collision(path_1, path_2):
     ##############################
-    # Task 3.1: Return the first collision that occurs between two robot paths (or None if there is no collision)
+    # 3.1: Return the first collision that occurs between two robot paths (or None if there is no collision)
     #           There are two types of collisions: vertex collision and edge collision.
     #           A vertex collision occurs if both robots occupy the same location at the same timestep
     #           An edge collision occurs if the robots swap their location at the same timestep.
-    #           You should use "get_location(path, t)" to get the location of a robot at time t.
-    # this function detects if an agent collides with another even after one of the two reached the goal
+    # Detects if an agent collides with another even after one of the two reached the goal
     path1, path2 = find_shorter_paths(path_1, path_2)
 
     for t in range( len(path1) ):
@@ -52,7 +51,7 @@ def detect_collisions(paths):
     # Task 3.1: Return a list of first collisions between all robot pairs.
     #           A collision can be represented as dictionary that contains the id of the two robots, the vertex or edge
     #           causing the collision, and the timestep at which the collision occurred.
-    #           You should use your detect_collision function to find a collision between two robots.
+    #           Use detect_collision function to find a collision between two robots.
 
     collisions = []
     # a1: agent 1 and a2: agent 2
@@ -128,7 +127,7 @@ def standard_splitting(collision):
 
 def disjoint_splitting(collision):
     ##############################
-    # Task 4.1: Return a list of (two) constraints to resolve the given collision
+    # 4.1: Return a list of (two) constraints to resolve the given collision
     #           Vertex collision: the first constraint enforces one agent to be at the specified location at the
     #                            specified timestep, and the second constraint prevents the same agent to be at the
     #                            same location at the timestep.
@@ -266,7 +265,7 @@ class CBSSolver(object):
         #             2. If this node has no collision, return solution
         #             3. Otherwise, choose the first collision and convert to a list of constraints (using your
         #                standard_splitting function). Add a new child node to your open list for each constraint
-        #           Ensure to create a copy of any objects that your child nodes might inherit
+        #             create a copy of any objects that your child nodes might inherit
 
         while self.open_list and timer.time() - self.start_time < self.time_max:
             # 1. Get next node

@@ -1,3 +1,7 @@
 
 # To run input file test_24.txt by CBS solver
 python run_experiments.py --instance "instances/test_24.txt" --solver CBS
+
+# To run all the input file name test_1, test_2, ...., test_50 by CBS solver
+python run_experiments.py --instance "instances/test_*.txt" --solver CBS --batch
+

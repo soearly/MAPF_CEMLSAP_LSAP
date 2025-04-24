@@ -1,0 +1,3 @@
+
+# To run input file test_24.txt by CBS solver
+python run_experiments.py --instance "instances/test_24.txt" --solver CBS

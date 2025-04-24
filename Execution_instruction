@@ -5,3 +5,15 @@ python run_experiments.py --instance "instances/test_24.txt" --solver CBS
 # To run all the input file name test_1, test_2, ...., test_50 by CBS solver
 python run_experiments.py --instance "instances/test_*.txt" --solver CBS --batch
 
+CEM parameter store in plots_5 file, code in run_experiments.py as following
+
+ # Create filename based on instance file name
+    plot_filename = os.path.join("plots_5", file.replace(".txt", "_cem_plot.png"))
+    print(f"Instance filename: {file}")  # Debug line
+    filename_only = os.path.basename(file)  # Remove path
+    plot_filename = os.path.join("plots_5", filename_only.replace(".txt", "_cem_plot.png"))
+
+animation gif in videos file
+best cost in results.csv file
+
+ 

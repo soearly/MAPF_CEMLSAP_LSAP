@@ -8,10 +8,11 @@ import multiprocessing
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-
+import re
 SOLVER = "CBS"
 
-
+def extract_number(f):
+    return int(re.search(r'(\d+)', os.path.basename(f)).group())
 def import_mapf_instance(filename):
     f = Path(filename)
     if not f.is_file():
@@ -108,7 +109,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    for file in sorted(glob.glob(args.instance)):
+    for file in sorted(glob.glob(args.instance), key=extract_number):
         print(f"\n=== Processing {file} ===")
         try:
             my_map, starts, goals = import_mapf_instance(file)

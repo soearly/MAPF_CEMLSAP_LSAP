@@ -106,7 +106,7 @@ def cem_plan(map_file, my_map, starts, goals, disjoint=False, num_samples=100, n
                 best_cost = UNREACHABLE_COST
                 result_note = "INF-NOPATH"
         except Exception as e:
-            print(f"[ERROR] CBS failure: {e}")
+            print(f"[ERROR] CBS failure on final solution: {e}")
             best_cost = UNREACHABLE_COST
             result_note = "ERROR"
 
@@ -139,11 +139,8 @@ if __name__ == '__main__':
     parser.add_argument('--instance', type=str, required=True,
                         help='Path to MAPF instance file(s), e.g., "instances/*.txt"')
     parser.add_argument('--disjoint', action='store_true', help='Use disjoint splitting strategy')
-
-    # Optional for compatibility
     parser.add_argument('--solver', type=str, default='CBS', help='Solver to use (currently only CBS supported)')
-    parser.add_argument('--batch', action='store_true',
-                        help='(Unused) Suppress display (animation is removed)')
+    parser.add_argument('--batch', action='store_true', help='(Unused) Suppress display (animation is removed)')
 
     args = parser.parse_args()
 

@@ -26,6 +26,6 @@ def generate_random_instance(filename, rows, cols, num_agents, obstacle_prob=0.2
 # Generate multiple instances
 os.makedirs("instances_random", exist_ok=True)
 
-for i in range(1000):
+for i in range(500):
     filename = f"instances_random/{i}.txt"
-    generate_random_instance(filename, rows=20, cols=20, num_agents=8)
+    generate_random_instance(filename, rows=20, cols=20, num_agents=5)

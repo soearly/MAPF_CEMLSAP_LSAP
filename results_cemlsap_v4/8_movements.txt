@@ -1,0 +1,104 @@
+Timestep 0:
+  Agent 0: (7, 6)
+  Agent 1: (10, 15)
+  Agent 2: (17, 18)
+  Agent 3: (6, 18)
+  Agent 4: (3, 1)
+  Agent 5: (6, 13)
+
+Timestep 1:
+  Agent 0: (7, 7)
+  Agent 1: (11, 15)
+  Agent 2: (17, 17)
+  Agent 3: (7, 18)
+  Agent 4: (2, 1)
+  Agent 5: (5, 13)
+
+Timestep 2:
+  Agent 0: (8, 7)
+  Agent 1: (12, 15)
+  Agent 2: (17, 16)
+  Agent 3: (7, 19)
+  Agent 4: (2, 2)
+  Agent 5: (5, 12)
+
+Timestep 3:
+  Agent 0: (9, 7)
+  Agent 1: (12, 15)
+  Agent 2: (18, 16)
+  Agent 3: (8, 19)
+  Agent 4: (2, 3)
+  Agent 5: (4, 12)
+
+Timestep 4:
+  Agent 0: (10, 7)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (9, 19)
+  Agent 4: (2, 4)
+  Agent 5: (4, 12)
+
+Timestep 5:
+  Agent 0: (11, 7)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (10, 19)
+  Agent 4: (2, 5)
+  Agent 5: (4, 12)
+
+Timestep 6:
+  Agent 0: (11, 8)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (11, 19)
+  Agent 4: (2, 6)
+  Agent 5: (4, 12)
+
+Timestep 7:
+  Agent 0: (12, 8)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (12, 19)
+  Agent 4: (2, 7)
+  Agent 5: (4, 12)
+
+Timestep 8:
+  Agent 0: (13, 8)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (13, 19)
+  Agent 4: (2, 8)
+  Agent 5: (4, 12)
+
+Timestep 9:
+  Agent 0: (14, 8)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (14, 19)
+  Agent 4: (3, 8)
+  Agent 5: (4, 12)
+
+Timestep 10:
+  Agent 0: (14, 7)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (15, 19)
+  Agent 4: (4, 8)
+  Agent 5: (4, 12)
+
+Timestep 11:
+  Agent 0: (15, 7)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (16, 19)
+  Agent 4: (5, 8)
+  Agent 5: (4, 12)
+
+Timestep 12:
+  Agent 0: (16, 7)
+  Agent 1: (12, 15)
+  Agent 2: (19, 16)
+  Agent 3: (16, 19)
+  Agent 4: (5, 8)
+  Agent 5: (4, 12)
+

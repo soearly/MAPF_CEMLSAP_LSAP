@@ -1,0 +1,68 @@
+Agent 0:
+  Time 0: (1, 12)
+  Time 1: (0, 12)
+  Time 2: (0, 11)
+  Time 3: (0, 10)
+  Time 4: (0, 9)
+  Time 5: (0, 8)
+  Time 6: (0, 7)
+  Time 7: (1, 7)
+  Time 8: (2, 7)
+
+Agent 1:
+  Time 0: (4, 6)
+  Time 1: (4, 7)
+  Time 2: (5, 7)
+  Time 3: (6, 7)
+  Time 4: (7, 7)
+  Time 5: (8, 7)
+
+Agent 2:
+  Time 0: (16, 18)
+  Time 1: (15, 18)
+  Time 2: (14, 18)
+  Time 3: (14, 17)
+  Time 4: (14, 16)
+  Time 5: (14, 15)
+  Time 6: (13, 15)
+  Time 7: (13, 14)
+  Time 8: (13, 13)
+  Time 9: (12, 13)
+
+Agent 3:
+  Time 0: (17, 0)
+  Time 1: (16, 0)
+  Time 2: (15, 0)
+  Time 3: (14, 0)
+
+Agent 4:
+  Time 0: (17, 18)
+  Time 1: (16, 18)
+  Time 2: (15, 18)
+  Time 3: (14, 18)
+  Time 4: (13, 18)
+  Time 5: (12, 18)
+  Time 6: (12, 17)
+  Time 7: (11, 17)
+  Time 8: (10, 17)
+  Time 9: (9, 17)
+  Time 10: (8, 17)
+  Time 11: (8, 18)
+  Time 12: (7, 18)
+  Time 13: (6, 18)
+  Time 14: (5, 18)
+  Time 15: (4, 18)
+  Time 16: (4, 17)
+  Time 17: (3, 17)
+  Time 18: (2, 17)
+  Time 19: (1, 17)
+  Time 20: (0, 17)
+  Time 21: (0, 18)
+
+Agent 5:
+  Time 0: (6, 3)
+  Time 1: (5, 3)
+  Time 2: (5, 2)
+  Time 3: (5, 1)
+  Time 4: (6, 1)
+
